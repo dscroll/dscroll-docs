@@ -12,7 +12,7 @@ export default {
     title: 'DScroll App',
   },
   'dscroll-app': {
-    title: 'Introduction',
+    title: 'App Guide',
   },
 };
 

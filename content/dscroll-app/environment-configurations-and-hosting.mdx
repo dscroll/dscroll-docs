@@ -1,0 +1,53 @@
+# Environment Configurations & Hosting
+
+Customization is driven by environment variables. The DScroll App is designed so that operators can brand, re-configure, and deploy their registry portals without editing a single line of React code.
+
+---
+
+## ⚙️ Configuring Your Environment (`.env.local`)
+
+To customize your white-label portal, copy `.env.example` in the root directory to a new file named `.env.local` and define your custom values:
+
+```bash
+cp .env.example .env.local
+```
+
+### Key Environment Parameters
+
+| Variable Key | Description | Example Custom Value |
+| :--- | :--- | :--- |
+| `NEXT_PUBLIC_TLD_NAME` | The sovereign TLD you own and want to issue | `mango` |
+| `NEXT_PUBLIC_APP_TITLE` | The custom title displayed in browser tabs | `Mango Registrar` |
+| `NEXT_PUBLIC_BRAND_LOGO` | Link to your brand's official logo file | `/logo.svg` |
+| `NEXT_PUBLIC_RPC_URL` | Your dedicated Base JSON-RPC node provider | `https://base-mainnet.g.alchemy.com/v2/...` |
+| `NEXT_PUBLIC_PAYMENT_TOKEN` | ERC-20 token address (leave blank for native ETH) | `0x123...` |
+
+> [!TIP]
+> Setting your specific `NEXT_PUBLIC_TLD_NAME` (e.g. `mango`) will lock the entire application frontend to **only** allow searches and minting under the `@mango` TLD namespace.
+
+---
+
+## 🌐 Deploying & Hosting Your Portal
+
+Because the DScroll App compiles into a standard, lightweight Next.js static site, it can be hosted globally on free, high-performance hosting platforms:
+
+### 1. Vercel (Recommended)
+1. Push your cloned repository to GitHub.
+2. Sign in to [Vercel](https://vercel.com/) and click **Add New Project**.
+3. Import your repository.
+4. **Define Variables**: Copy the variables from your `.env.local` file and paste them into Vercel's **Environment Variables** section.
+5. Click **Deploy**. Your custom registrar is live in under 2 minutes!
+
+### 2. Netlify
+1. Log in to [Netlify](https://www.netlify.com/) and select **Import from Git**.
+2. Connect your GitHub and select the project repository.
+3. Under Build Settings, add your environment variables.
+4. Click **Deploy Site**.
+
+---
+
+## 💎 Zero DScroll Fees
+
+DScroll is built on a **sovereign, public-goods model**:
+* **No Middleware Charges**: Unlike SaaS platforms that charge monthly registry fees, DScroll has **zero** monthly fees, subscription costs, or transactional revenue-splits.
+* **100% Creator Economics**: 100% of all registrations paid by your community flows directly to your designated payout address on the blockchain, completely bypasses DScroll, and belongs exclusively to you.

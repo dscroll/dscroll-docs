@@ -1,0 +1,36 @@
+# Decentralized Storage: IPFS & Filecoin
+
+In the spirit of complete Web3 sovereignty, DScroll decouples user identities and profile data from centralized web hosting. The DScroll App is designed to utilize **IPFS** and **Filecoin** peer-to-peer storage networks.
+
+---
+
+## 💾 Why Decentralized Storage?
+
+Traditional DNS and naming systems rely on centralized databases (like Amazon Web Services or Google Cloud) to host profile avatars, bios, and email records. If the central server experiences downtime, your profile records vanish or break.
+
+DScroll uses decentralized, content-addressed storage layers to build true censorship resistance:
+
+* **Censorship Resistance**: Your profile details are pinned across thousands of independent nodes worldwide. No single central authority can freeze or remove your data.
+* **Content Addressing**: Data is fetched based on its cryptographic content hash rather than a mutable URL link, guaranteeing that your data has not been modified or tampered with.
+* **High Durability**: Filecoin integration provides long-term, verifiable storage deals ensuring that historical records are preserved permanently.
+
+---
+
+## ⚙️ How IPFS / Filecoin Hosting Works
+
+When you save your profile information or publish TLD details:
+
+1. **JSON Compilation**: The DScroll App compiles your text records, social handles, and avatar references into a standardized JSON metadata file.
+2. **IPFS Hash Generation**: The file is uploaded to the InterPlanetary File System (IPFS), generating a unique Content Identifier (CID, e.g. `ipfs://QmXyZ...`).
+3. **On-Chain Pointer**: The CID is saved to the blockchain as the `tokenURI` (for the TLD NFT) or mapped resolver text record (for sub-name profiles).
+4. **Filecoin Persistence**: Active storage nodes verify the content and back it up onto Filecoin, establishing a permanent, highly durable decentralized storage record.
+
+---
+
+## 🚀 Continuous Development & Roadmap
+
+DScroll is committed to pushing the boundaries of peer-to-peer data management. Our storage engineering team is actively working on several key storage improvements:
+
+* **Optimized IPFS Gateway Caching**: Developing highly reliable gateway caches to ensure that avatars and descriptions load in milliseconds, matching the speed of centralized Web2 applications.
+* **Decentralized Database Syncing**: Exploring dynamic Web3 databases (like OrbitDB or Ceramic Network) to enable even richer dynamic off-chain records.
+* **Streamlined IPFS Upload Tools**: Integrating native web-based IPFS drag-and-drop tools directly into the DScroll App frontend so operators do not need to configure custom third-party pinning services.

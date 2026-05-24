@@ -1,0 +1,65 @@
+# Cloning & Local Setup
+
+To launch your branded white-label registrar portal, you will need to clone the open-source DScroll App codebase and configure it on your local development machine.
+
+---
+
+## 🚀 Prerequisites
+
+Before you begin, ensure you have the following software installed:
+* [Git](https://git-scm.com/) (version 2.20 or higher)
+* [Node.js](https://nodejs.org/) (LTS version 18 or 20 recommended)
+* Package Manager: `npm` or `yarn`
+
+---
+
+## 📂 Step-by-Step Installation
+
+Follow these commands in your terminal to set up the local repository:
+
+### 1. Clone the Codebase
+Clone the official open-source registrar template from GitHub to your local workspace:
+
+```bash
+git clone https://github.com/dscroll/dscroll-app.git
+cd dscroll-app
+```
+
+### 2. Install Dependencies
+Install all required package dependencies including React, Next.js, and Web3 components (RainbowKit/Wagmi/Viem):
+
+Using npm:
+```bash
+npm install
+```
+
+Or using yarn:
+```bash
+yarn install
+```
+
+### 3. Launch the Development Server
+Run the local next.js development environment to inspect the app in your browser:
+
+Using npm:
+```bash
+npm run dev
+```
+
+Or using yarn:
+```bash
+yarn dev
+```
+
+* Open your browser and navigate to **`http://localhost:3000`** to view your running white-label portal interface!
+
+---
+
+## 📁 Repository Directory Structure
+
+Understanding where key configurations live inside the repository is vital for customization:
+
+* **`/app` or `/pages`**: Core Next.js routing and component layouts.
+* **`/components`**: Reusable frontend elements (wallet connect button, input bars, cards).
+* **`/public`**: Branding assets (logos, custom fonts, favicon).
+* **`.env.example`**: The template environment file containing all configuration fields.
