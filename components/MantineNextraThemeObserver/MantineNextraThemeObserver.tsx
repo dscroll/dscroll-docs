@@ -1,6 +1,8 @@
+'use client';
+
+import { useEffect } from 'react';
 import { useTheme } from 'nextra-theme-docs';
 import { useMantineColorScheme } from '@mantine/core';
-import { useDidUpdate } from '@mantine/hooks';
 
 /**
  * This component is responsible for observing the theme changes in Nextra and Mantine.
@@ -16,9 +18,11 @@ export function MantineNextraThemeObserver() {
   const { setColorScheme } = useMantineColorScheme();
   const { theme } = useTheme();
 
-  useDidUpdate(() => {
-    setColorScheme(theme === 'dark' ? 'dark' : theme === 'system' ? 'auto' : 'light');
-  }, [theme]);
+  useEffect(() => {
+    if (theme) {
+      setColorScheme(theme === 'dark' ? 'dark' : theme === 'system' ? 'auto' : 'light');
+    }
+  }, [theme, setColorScheme]);
 
   return null;
 }

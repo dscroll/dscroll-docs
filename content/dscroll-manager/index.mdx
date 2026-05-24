@@ -1,0 +1,107 @@
+# DScroll Sovereign TLDs: Decentralizing the Web3 Digital Identity Layer
+
+## Introduction: The Sovereign Identity Revolution
+
+In the decentralized web, digital identity is the cornerstone of ownership, reputation, and community interaction. However, traditional Web2 domain registries (DNS) are leased, highly centralized, and built for pointing to websites, not for resolving Web3 assets. Even premier Web3 naming services (like ENS) treat users as sub-domain renters under a shared, rigid namespace.
+
+**DScroll** is an open-source **software application** (not a company) that introduces a paradigm shift: **Sovereign Top-Level Domains (TLDs)** designed exclusively for Web3 **digital identity**.
+
+Under DScroll’s architecture, TLDs are minted as unique **NFTs** on-chain, and the underlying protocol token name is **ODude**. Instead of competing directly with ENS, DScroll goes way beyond it. It is an infrastructure that empowers *anyone*—creators, brands, communities, and DAOs—to become their own "ENS-style" identity provider using their custom minted TLD (such as `@mango` or `@eth`). 
+
+---
+
+## ⚙️ The DScroll Ecosystem & Applications
+
+The DScroll software suite consists of two distinct user-facing applications designed to coordinate sovereign identity creation and management:
+
+### 🛠️ The DScroll Manager (`manager.dscroll.com`)
+This application is the **DScroll TLD Manager**. It is the dashboard software utilized by TLD owners to configure, protect, and manage their minted registries. Through the Manager, owners set sub-identity registration prices, select payment currencies (native gas or custom tokens), enable price locks, transfer registry ownership, and monitor community statistics.
+
+*   **Current Blockchain Support**: The default deployment network is the **Base** blockchain. Support for the **BNB Chain** is currently under active development.
+
+### 🌐 The Live Demo & Showcase App (`app.dscroll.com`)
+For a live demonstration of the end-user lookup and registration experience, the DScroll team hosts a live showcase application at `app.dscroll.com`. This application demonstrates how communities interact with naming systems in real-time, currently supporting active, ready-to-use TLD namespaces including:
+*   `@crypto`
+*   `@eth`
+*   `@btc`
+*   `@base`
+
+---
+
+## 💎 The Paradigm Shift: From Renter to Identity Provider
+
+To fully understand DScroll, it is important to separate this sovereign identity framework from traditional website domains and standard naming protocols:
+
+*   **Not a Web2 Registrar**: DScroll is not a competitor to Web2 registrars (like GoDaddy) and is not meant to host traditional website URLs. It is a native Web3 routing and identity protocol designed to resolve wallet addresses, metadata, and cryptographic credentials.
+*   **Decentralizing the Provider Layer**: In the ENS ecosystem, everyone registers under a shared extension controlled by a single DAO (e.g., `vitalik.eth`). With DScroll, **you become the ENS provider**. Once you mint `@mango` or `@eth` as an NFT, you hold the absolute monopoly on that namespace. You define who can register identities under it, what currency they pay in, and how the namespace is structured.
+*   **The `@` Formatting Paradigm**: While traditional systems rely on dot-notation, DScroll establishes a clean, identifier-based structure. 
+    *   *ENS Example*: `demo.eth`
+    *   *DScroll TLD Example*: `demo@eth` (registered under the `@eth` TLD) or `test@mango` (registered under the `@mango` TLD).
+
+By eliminating recurring "rent" and placing the registry itself in a self-custodied NFT, DScroll establishes a true digital identity asset class owned permanently by the creator.
+
+---
+
+## 🚀 Launching Your Custom White-Label Identity App
+
+If you are a TLD owner and want to host your own registration application to let your community mint custom sub-name identities (like `user@yourbrand`), you do not have to write any code from scratch.
+
+DScroll provides a fully functional, open-source white-label template:
+*   **GitHub Repository**: [dscroll-app](https://github.com/dscroll/dscroll-app) (`https://github.com/dscroll/dscroll-app`)
+*   **Instructions**: The repository contains full, step-by-step instructions to clone, brand, configure your custom minted TLD, and deploy your custom registrar app to your own domain in minutes.
+
+---
+
+## ⚙️ How the Sovereign TLD Registry Works
+
+The DScroll TLD ecosystem operates as a comprehensive, decentralized name-service lifecycle, flowing from initial discovery to active community identity distribution:
+
+### 1. Identity Extension Discovery & Claiming
+Using the DScroll interface, users search for any available alphanumeric extension. If the TLD is free, they can claim it instantly via a one-time blockchain transaction. This creates the parent registry record and mints a unique **ODude** NFT representing ownership of that entire TLD namespace. There are no annual renewal fees.
+
+### 2. Custom Identity Rules Setup
+Once owned, the registry operator accesses the **DScroll Manager** (`manager.dscroll.com`) to define the rules of their brand-new identity registry. The operator controls:
+*   **Identity Pricing**: Set the registration fee that users must pay to register a custom sub-identity under your TLD.
+*   **Flexible Currency Versatility**: Registry owners can set their own custom **ERC20 Token Address** if required (forcing registrations to use their project's utility token or a stablecoin), or default to the network's **native token** (like ETH) automatically.
+*   **Locking & Protection**: Lock the TLD configuration to freeze pricing and registration settings, assuring the community of permanent, immutable rules.
+*   **Commissions**: Configure secondary market or registration royalties, ensuring that a percentage of every sub-name transaction flows directly back to the registry owner's wallet automatically.
+
+### 3. White-Label Portal Deployment
+Every DScroll TLD owner has access to a free, open-source white-label registration portal. By updating their TLD's on-chain metadata, the owner maps a portal app to their identity. This allows them to host a custom, branded Web3 lookup and registration front-end where their community can search for, register, and manage their `username@tld` identities instantly.
+
+### 4. Branded Sub-Name Identity Economy
+With rules configured and a portal deployed, the ecosystem comes alive. Community members, customers, or fans register customized identities under your TLD (e.g., `vip@mango`). These sub-names are fully recognized, self-custodied digital identities that can be used for resolving wallet addresses, proving community membership, or acting as a unified identity across compatible Web3 platforms.
+
+---
+
+## 📈 Economic Mechanics & Community Utility
+
+DScroll transforms naming services from a cost center into a powerful community identity and monetization tool:
+
+### 🪙 Token Utility Amplification
+For projects with their own ERC20 token, forcing sub-name registrations to be paid in that specific token creates massive, organic token utility. To buy a `user@yourbrand` identity, users must purchase and spend your token, driving trading volume and building utility directly into your token economy. If no token is configured, the native token (e.g., ETH) is seamlessly used as the fallback payment.
+
+### 🛡️ Price Locks & Scarcity Control
+Registry operators can protect their namespace from squatters or coordinate pricing tiers:
+*   **Sovereign Locking**: Prevents unauthorized modifications to pricing models, building long-term community trust.
+*   **Active Toggles**: Owners can temporarily disable public registrations to host private naming events, reserve premium names for key team members, or conduct sequential marketing campaigns.
+
+### 🎁 Incentives and Community Airdrops
+TLD owners can easily reward their early adopters, active contributors, or token holders. The platform includes dedicated tools where owners can coordinate domain airdrop campaigns, rewarding loyal fans with free, high-status sub-name identities (e.g., `founder@yourbrand` or `vip@yourbrand`) directly, cementing brand loyalty.
+
+---
+
+## 🌟 Key Benefits for Stakeholders
+
+### For Creators, Influencers, & Brands
+*   **Unparalleled Branding**: Establish a premium, recognizable namespace (e.g., `identity@creator` or `vip@brand`).
+*   **Independent Revenue**: Generate recurring revenue from registrations and commissions without paying split fees to intermediate domain authorities.
+*   **Platform Independence**: Your identity lives on the blockchain, owned fully by you and free from platform deplatforming.
+
+### For DAOs & Web3 Communities
+*   **Unified On-Chain Identity**: Bind members under a single, cohesive banner (e.g., `member@daoname`).
+*   **Cohesive Ecosystems**: Automatically grant special privileges, access control (token-gating), or voting weights based on the sub-name identities held by community members.
+
+### For End-Users
+*   **Self-Custody**: Sub-names are held directly in user wallets as secure digital identities.
+*   **Community Pride**: Easily display affinity, membership, or status inside your favorite Web3 project by carrying its official domain extension.

@@ -4,7 +4,7 @@ import '@gfazioli/mantine-marquee/styles.css';
 import '@gfazioli/mantine-text-animate/styles.css';
 
 import { Layout } from 'nextra-theme-docs';
-import { Banner, Head } from 'nextra/components';
+import { Banner } from 'nextra/components';
 import { getPageMap } from 'nextra/page-map';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 // !! End of important imports !!
@@ -24,7 +24,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang="en" dir="ltr" {...mantineHtmlProps} suppressHydrationWarning>
-      <Head>
+      <head>
         <ColorSchemeScript
           nonce={head.mantine.nonce}
           defaultColorScheme={head.mantine.defaultColorScheme}
@@ -34,7 +34,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           name="viewport"
           content="minimum-scale=1, initial-scale=1, width=device-width, user-scalable=no"
         />
-      </Head>
+      </head>
       <body>
         <MantineProvider theme={theme} defaultColorScheme={head.mantine.defaultColorScheme}>
           <Layout

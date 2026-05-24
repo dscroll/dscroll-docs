@@ -1,8 +1,8 @@
 'use client';
 
+import { useEffect } from 'react';
 import { Navbar, useTheme } from 'nextra-theme-docs';
 import { Group, Text, Button, useMantineColorScheme } from '@mantine/core';
-import { useDidUpdate } from '@mantine/hooks';
 import { IconBrandX } from '@tabler/icons-react';
 import { ColorSchemeControl } from '../ColorSchemeControl/ColorSchemeControl';
 import { Logo } from '../Logo/Logo';
@@ -17,9 +17,11 @@ export const MantineNavBar = () => {
   const { setColorScheme } = useMantineColorScheme();
   const { theme } = useTheme();
 
-  useDidUpdate(() => {
-    setColorScheme(theme === 'dark' ? 'dark' : theme === 'system' ? 'auto' : 'light');
-  }, [theme]);
+  useEffect(() => {
+    if (theme) {
+      setColorScheme(theme === 'dark' ? 'dark' : theme === 'system' ? 'auto' : 'light');
+    }
+  }, [theme, setColorScheme]);
 
   return (
     <Navbar
