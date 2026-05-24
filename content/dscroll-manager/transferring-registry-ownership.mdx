@@ -1,0 +1,47 @@
+# Transferring Registry Ownership
+
+Because every Sovereign TLD is minted as a standard **ERC-721 NFT**, transferring ownership of your entire naming registry is as simple as sending a token from your Web3 wallet.
+
+---
+
+## ⚠️ Critical Security Warning
+
+Transferring the root TLD NFT represents a complete, permanent transfer of administrative power. The wallet that holds the NFT controls all aspects of the registry.
+
+> [!CAUTION]
+> Once you transfer the registry NFT, you lose all administrative rights over the TLD. You will no longer be able to set pricing, toggle active status, adjust commissions, or collect registration payouts. Ensure you verify the target address multiple times before executing!
+
+---
+
+## 🛠️ How to Transfer Ownership
+
+There are two primary methods to transfer your TLD registry ownership:
+
+### Method A: Via the DScroll Manager (Recommended)
+1. Visit the **DScroll Manager** (`manager.dscroll.com`) and open your dashboard.
+2. Select your TLD.
+3. Click the **Transfer Ownership** button under Advanced Settings.
+  4. Enter the recipient's **Web3 Address**.
+  5. Review the warning prompt and confirm.
+  6. Approve the transaction in your wallet.
+  
+  ### Method B: Via standard NFT Marketplaces or Wallets
+  Because the registry is a standard ERC-721 token, you can also transfer it directly using your wallet's send feature (e.g., MetaMask, Rabby) or by listing/transferring it on major marketplaces (like OpenSea or Blur).
+  * To find the registry token in your wallet, look for your **ODude** NFT collection.
+  
+  ---
+  
+  ## 🏢 Transitioning to DAO Governance
+  
+  As a project grows, transitioning from a single founder's hot wallet to a decentralized governance structure is crucial. DScroll's native NFT-based architecture makes this transition seamless:
+  
+  ```mermaid
+  graph LR
+      A[Founder Hot Wallet] -->|Transfers TLD NFT| B[DAO Multisig - Safe]
+      B -->|Proposes administrative transactions| C[DScroll Manager Dashboard]
+      C -->|Executes updates via Safe Transaction| D[Registry Contracts]
+  ```
+  
+  ### Best Practices for DAO Integration:
+  1. **Multi-Signature Control**: Transfer the TLD NFT directly to a Gnosis Safe multi-signature wallet address.
+  2. **Treasury Payout**: Ensure your payout address is updated to point directly to the DAO treasury wallet so registrations continuously fund community initiatives.

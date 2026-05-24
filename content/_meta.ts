@@ -5,7 +5,7 @@ export default {
     title: 'DScroll Manager',
   },
   'dscroll-manager': {
-    title: 'Introduction',
+    title: 'Manager Guide',
   },
   'dscroll-app-title': {
     type: 'separator',

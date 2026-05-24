@@ -1,0 +1,44 @@
+# Customizing TLD Metadata
+
+Branding is what transforms a simple naming extension into a highly sought-after digital identity. DScroll allows operators to attach rich, decentralized metadata directly to their TLD registries on-chain.
+
+---
+
+## 🎨 Why Customize Your TLD Metadata?
+
+Customizing your TLD's metadata ensures that whenever a wallet, block explorer, or portal queries your namespace, it retrieves your official brand assets rather than a generic placeholder.
+
+* **Branded Portals**: Link your official white-label registration portal domain.
+* **Social Proof**: Attach Twitter/X, Discord, Telegram, and GitHub links.
+* **Visual Identity**: Configure high-resolution logos, avatars, and banner images.
+* **SEO & Discovery**: Write a detailed description explaining the purpose of your naming community.
+
+---
+
+## 📝 Supported Metadata Fields
+
+The DScroll Manager allows you to configure a standardized JSON schema containing key identity attributes:
+
+| Field | Description | Example Value |
+| :--- | :--- | :--- |
+| **DisplayName** | The public brand name of your TLD | `Mango Community Naming` |
+| **Description** | Short explanation of who the naming system is for | `Official identities for Mango DAO members` |
+| **Website** | Your official white-label domain or homepage | `https://names.mango.xyz` |
+| **Avatar / Logo** | HTTPS or IPFS URL to your square brand asset | `ipfs://QmXyZ...` |
+| **Social Handles** | Direct links to Twitter, Discord, and Telegram | `@MangoDAO` |
+
+---
+
+## 🛠️ How to Update Metadata via DScroll Manager
+
+To update your registry metadata:
+
+1. Visit **DScroll Manager** (`manager.dscroll.com`) and open your dashboard.
+2. Select your TLD and click **Edit Metadata**.
+3. Fill out the configuration form with your brand details, website, and social links.
+4. **Publish Metadata**: Click **Save Changes**.
+   * *Under the Hood*: This processes a transaction that updates the `metadataURI` or dynamic metadata keys on-chain in the DScroll registrar contract.
+5. Approve the transaction in your connected wallet.
+
+> [!NOTE]
+> Metadata changes take effect instantly on-chain. However, third-party apps or portals caching registry data might take a few minutes to refresh and display your updated brand assets.

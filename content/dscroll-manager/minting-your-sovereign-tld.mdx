@@ -1,0 +1,49 @@
+# Minting Your Sovereign TLD
+
+Minting a custom Top-Level Domain (TLD) is the first step toward launching your independent Web3 digital identity brand. The minting process deploys a unique, self-custodied non-fungible token (NFT) directly to your wallet.
+
+---
+
+## 🚀 Step-by-Step Minting Process
+
+Minting a TLD is simple and takes place directly within the **DScroll Registry** application:
+
+1. **Navigate to the Mint Portal**: Visit the mint page of the DScroll interface.
+2. **Search for Availability**: Enter your desired alphanumeric TLD (e.g., `mango`, `community`, `store`).
+   * *Note: Spaces and special characters are not allowed to maintain Web3 resolution compatibility.*
+3. **Verify Status**: The system will automatically check if the TLD has already been claimed on-chain.
+4. **Initiate Mint Transaction**: If the name is available, click **Mint TLD**. This will request a transaction in your connected Web3 wallet (e.g., MetaMask, Rabby, Coinbase Wallet).
+5. **Confirm and Claim**: Once the transaction is finalized on the blockchain, your TLD is instantly active. A unique DScroll NFT is deposited into your wallet representing complete registry ownership.
+
+---
+
+## 🆔 Understanding TLD Token IDs
+
+Every sovereign TLD is a unique NFT conforming to the **ERC-721** standard. In the smart contract registry, each TLD is represented by a unique, numeric `Token ID`.
+
+### How the Token ID is Calculated
+
+To ensure absolute uniqueness and deterministic resolution across all blockchain nodes, DScroll calculates the Token ID by hashing the TLD string using the **Keccak-256** cryptographic hash algorithm, which is then converted into a `uint256` integer.
+
+```typescript
+// Example of how the TLD Name hashes to a Token ID
+import { ethers } from "ethers";
+
+const tldName = "mango";
+const tokenId = ethers.BigNumber.from(ethers.utils.id(tldName)).toString();
+
+console.log(`TLD: ${tldName}`);
+console.log(`Token ID: ${tokenId}`);
+// Output: 8150244795328906954203115456... (uint256 representation)
+```
+
+> [!IMPORTANT]
+> The relationship between the string name (e.g., `mango`) and the integer Token ID is **1:1 and deterministic**. Resolvers use this mathematical mapping to look up registry metadata instantly on-chain without relying on centralized indices.
+
+---
+
+## 💎 Features of the TLD NFT
+
+* **ERC-721 Standard**: Fully compatible with popular NFT marketplaces (like OpenSea, Blur, or Element), allowing operators to trade or auction whole registries effortlessly.
+* **Metadata Attachment**: The NFT's `tokenURI` points directly to the on-chain registry state, resolving your branding, pricing, and rules.
+* **Sovereign Custody**: No central administrator can revoke, delete, or modify your TLD. Only the private key containing the registry NFT can configure the namespace.
