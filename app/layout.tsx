@@ -4,14 +4,12 @@ import '@gfazioli/mantine-marquee/styles.css';
 import '@gfazioli/mantine-text-animate/styles.css';
 
 import { Layout } from 'nextra-theme-docs';
-import { Banner } from 'nextra/components';
 import { getPageMap } from 'nextra/page-map';
 import { ColorSchemeScript, mantineHtmlProps, MantineProvider } from '@mantine/core';
 // !! End of important imports !!
 
 import { MantineFooter, MantineNavBar } from '@/components';
 import config from '@/config';
-import pack from '../package.json';
 import { theme } from '../theme';
 
 import './global.css';
@@ -41,11 +39,6 @@ export default async function RootLayout({ children }: { children: React.ReactNo
             nextThemes={{
               defaultTheme: 'dark',
             }}
-            banner={
-              <Banner storageKey={`release-notes-${pack.version}`} key="banner">
-                ✨ v{pack.version} DScroll
-              </Banner>
-            }
             navbar={<MantineNavBar key="navbar" />}
             pageMap={pageMap}
             docsRepositoryBase={nextraLayout.docsRepositoryBase}
