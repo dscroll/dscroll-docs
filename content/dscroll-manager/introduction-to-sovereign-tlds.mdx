@@ -37,8 +37,8 @@ graph TD
     A[Sovereign TLD Owner] -->|Mints TLD NFT| B[On-Chain Registry Record]
     B -->|Configures Rules via DScroll Manager| C[Custom registrar settings]
     C -->|1. Pricing in Custom ERC-20 / Native GAS| D[Identity Registrar]
-    C -->|2. Royalties & Commissions| D
-    C -->|3. Access Locks| D
+    C -->|2. Direct Payout Address| D
+    C -->|3. Registry Pause Control| D
     E[End Users] -->|Register subname@tld| D
 ```
 
@@ -56,7 +56,7 @@ Unlike traditional domain registrars where you lease a name annually, DScroll TL
 As the registry operator, you define the absolute rules of your namespace:
 * **Who** can register a sub-identity under your TLD.
 * **What** token/gas they must pay to register.
-* **How** the fees and secondary commissions are routed to your wallet.
+* **How** the registration fees are routed to your designated payout wallet.
 
 ### 3. Infinite Scalability
 Create thousands of branded sub-name identities (e.g., `support@brand`, `founder@brand`, `member@brand`) to build organic community ecosystems and unified Web3 identity networks.

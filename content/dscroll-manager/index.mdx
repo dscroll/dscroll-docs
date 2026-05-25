@@ -15,7 +15,7 @@ Under DScroll’s architecture, a TLD is basically an **NFT** on-chain. On marke
 The DScroll software suite consists of two distinct user-facing applications designed to coordinate sovereign identity creation and management:
 
 ### 🛠️ The DScroll Manager (`manager.dscroll.com`)
-This application is the **DScroll TLD Manager**. It is the dashboard software utilized by TLD owners to configure, protect, and manage their minted registries. Through the Manager, owners set sub-identity registration prices, select payment currencies (native gas or custom tokens), enable price locks, transfer registry ownership, and monitor community statistics.
+This application is the **DScroll TLD Manager**. It is the dashboard software utilized by TLD owners to configure, protect, and manage their minted registries. Through the Manager, owners set sub-identity registration prices, select payment currencies (native gas or custom tokens), transfer registry ownership, and monitor community statistics.
 
 *   **Current Blockchain Support**: The active deployment network is the **Base** blockchain.
 
@@ -63,8 +63,8 @@ Using the DScroll interface, users search for any available alphanumeric extensi
 Once owned, the registry operator accesses the **DScroll Manager** (`manager.dscroll.com`) to define the rules of their brand-new identity registry. The operator controls:
 *   **Identity Pricing**: Set the registration fee that users must pay to register a custom sub-identity under your TLD.
 *   **Flexible Currency Versatility**: Registry owners can set their own custom **ERC20 Token Address** if required (forcing registrations to use their project's utility token or a stablecoin), or default to the network's **native token** (like ETH) automatically.
-*   **Locking & Protection**: Lock the TLD configuration to freeze pricing and registration settings, assuring the community of permanent, immutable rules.
-*   **Commissions**: Configure secondary market or registration royalties, ensuring that a percentage of every sub-name transaction flows directly back to the registry owner's wallet automatically.
+*   **Flexible Adjustments**: Update your pricing or change the accepted ERC-20 payment token at any time to adapt to community growth or changing tokenomics. (Note: The underlying deployment blockchain cannot be changed after minting).
+*   **Primary Revenue**: Set up primary registration fees and configure payout destinations, ensuring that all funds from new identity registrations flow directly to your preferred operator wallet or multisig treasury.
 
 ### 3. White-Label Portal Deployment
 Every DScroll TLD owner has access to a free, open-source white-label registration portal. By updating their TLD's on-chain metadata, the owner maps a portal app to their identity. This allows them to host a custom, branded Web3 lookup and registration front-end where their community can search for, register, and manage their `username@tld` identities instantly.
@@ -81,9 +81,9 @@ DScroll transforms naming services from a cost center into a powerful community 
 ### 🪙 Token Utility Amplification
 For projects with their own ERC20 token, forcing sub-name registrations to be paid in that specific token creates massive, organic token utility. To buy a `user@yourbrand` identity, users must purchase and spend your token, driving trading volume and building utility directly into your token economy. If no token is configured, the native token (e.g., ETH) is seamlessly used as the fallback payment.
 
-### 🛡️ Price Locks & Scarcity Control
+### 🛡️ Flexible Settings & Scarcity Control
 Registry operators can protect their namespace from squatters or coordinate pricing tiers:
-*   **Sovereign Locking**: Prevents unauthorized modifications to pricing models, building long-term community trust.
+*   **Dynamic Updates**: Easily modify your pricing rules or currency to adapt to market conditions and community feedback.
 *   **Active Toggles**: Owners can temporarily disable public registrations to host private naming events, reserve premium names for key team members, or conduct sequential marketing campaigns.
 
 ### 🎁 Incentives and Community Airdrops
