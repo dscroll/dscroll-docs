@@ -9,7 +9,7 @@ export default {
       template: '%s | DScroll Documentation',
     },
     description: 'DScroll Documentation',
-    metadataBase: new URL('https://next-app-nextra-template.vercel.app/'),
+    metadataBase: new URL('https://docs.dscroll.com/'),
     keywords: [
       'DScroll',
       'Documentation',
@@ -32,7 +32,7 @@ export default {
       'msapplication-TileColor': '#fff',
     },
     twitter: {
-      site: 'https://next-app-nextra-template.vercel.app/',
+      site: 'https://docs.dscroll.com/',
     },
     alternates: {
       // https://github.com/vercel/next.js/discussions/50189#discussioncomment-10826632
